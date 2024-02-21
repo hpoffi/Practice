@@ -1,8 +1,6 @@
 //how to use comparable interface implementation
 package collections;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class Student implements Comparable<Student> {
     private int id;
     private String name;

@@ -8,6 +8,7 @@ class Harshitdemo implements client
      String name; double sal;
      public void input()
      {
+        @SuppressWarnings("resource")
         Scanner r = new Scanner(System.in);
         System.out.println("Enter Username: ");
         name = r.nextLine();

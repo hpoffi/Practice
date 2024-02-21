@@ -1,4 +1,5 @@
 public class Readbook {
+    @SuppressWarnings("unused")
     private int Noofcopies;
 
 
