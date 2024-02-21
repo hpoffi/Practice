@@ -1,5 +1,7 @@
 package practice;
 
+import java.math.BigDecimal;
+
 public class StudentRunner {
     public static void main(String[] args) {
         int[] marks = { 99, 98, 97, 96, 95 };
@@ -17,6 +19,9 @@ public class StudentRunner {
 
         int minimarks = student.getMinimumMarks();
         System.out.println("MinimumMarks: " + minimarks);
+
+        BigDecimal average = student.getAverageMarks();
+        System.out.println("AverageMarks: " + average);
     }
 
 }

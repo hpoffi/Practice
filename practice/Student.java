@@ -1,5 +1,8 @@
 package practice;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Student {
 
     private String name;
@@ -46,6 +49,12 @@ public class Student {
         }
         return minimarks;
         
+    }
+
+    public BigDecimal getAverageMarks() {
+        int sum = getTotalSumOfMarks();
+        int number = getNumberOfMarks();
+         return new BigDecimal(sum).divide(new BigDecimal(number),3,RoundingMode.UP);
     }
 
 }
